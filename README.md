@@ -1,4 +1,5 @@
 ## Overview
+
 This model actually demonstrates how we can deal with environment in the financial markets. It is usually quite difficult to model environment in financial markets. OpenAI Gym provides rich environments about video games, classic control tasks, robotics simulations but except financial markets.
 
 However, there is a problem in llSourcell method, which always gets a profit of 0 when evaluating model. Then xtr33me tried to force the first iteration a buy, which often generates one trade only (one buy/sell signal). Still, it can’t solve the problem fundamentally. I suppose that the agent(multilayer perception network) falls into local minima/local optima during training process. In fact, training a neural network with an optimization algorithm is hard, not least because the error surface is non-convex and contains local minima, flat spots, and is highly multidimensional.
